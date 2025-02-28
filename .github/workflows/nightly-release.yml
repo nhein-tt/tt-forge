@@ -46,18 +46,18 @@ jobs:
       with:
         body: |
           ### tt-forge-fe
-          [Getting started](https://docs.tenstorrent.com/tt-forge-fe/getting-started.html)
-          #### Test status: ${{ steps.tt-forge-fe-artifacts.outputs.run-status-symbol }}
-          #### Workflow run: ${{ steps.tt-forge-fe-artifacts.outputs.run-url }}
-          [Known bugs](https://github.com/tenstorrent/tt-forge-fe/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug)
-          #### Files:
+          :green_book: [Getting started](https://docs.tenstorrent.com/tt-forge-fe/getting-started.html)
+          :bug: [Known bugs](https://github.com/tenstorrent/tt-forge-fe/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug)
+          :school_satchel: Test status: ${{ steps.tt-forge-fe-artifacts.outputs.run-status-symbol }}
+          :runner: Workflow run: ${{ steps.tt-forge-fe-artifacts.outputs.run-url }}
+          :file_folder: Files:
             ${{ steps.tt-forge-fe-artifacts.outputs.download-files }}
 
           ### tt-torch
-          [Getting started](https://docs.tenstorrent.com/tt-torch/getting_started.html)
+          :green_book: [Getting started](https://docs.tenstorrent.com/tt-torch/getting_started.html)
+          :bug: [Known bugs](https://github.com/tenstorrent/tt-torch/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug)
           #### Test status: ${{ steps.tt-torch-artifacts.outputs.run-status-symbol }}
           #### Workflow Run: ${{ steps.tt-torch-artifacts.outputs.run-url }}
-          [Known bugs](https://github.com/tenstorrent/tt-torch/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug)
           #### Files:
             ${{ steps.tt-torch-artifacts.outputs.download-files }}
 
